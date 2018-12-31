@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Ares Architecture</title>
+	<title>Ares Application Architecture</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -20,16 +20,33 @@
 <body>
 	<div class="panel panel-default root-panel">
 		<div class="panel-heading root-panel-heading">
-			<b>Ares Architecture</b>
-			(<span class="i18n-elementtype-ArchimateDiagramModel"></span>)
-			<a class="glyphicon glyphicon-info-sign" id="hint-ArchimateDiagramModel" target="hint"></a>
+			<b>Ares Application Architecture</b>
+			(<span class="i18n-viewpoint-application_usage"></span>)
+			<a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_application_usage" target="hint"></a>
 		</div>
 		<div class="panel-body root-panel-body">
+			<img class="diagram" src="../images/2081a7c8-3219-4701-8fd8-0f843323fa8d.png" alt="Ares Application Architecture" usemap="#2081a7c8-3219-4701-8fd8-0f843323fa8dmap">
+			<map name="2081a7c8-3219-4701-8fd8-0f843323fa8dmap">
+						<area shape="rect" coords="646,370,766,443" href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html"  target="element">
+						<area shape="rect" coords="958,130,1078,203" href="../elements/50e776ff-a8e9-4181-b568-cb859b25dd0d.html"  target="element">
+						<area shape="rect" coords="322,130,442,203" href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html"  target="element">
+						<area shape="rect" coords="490,466,610,521" href="../elements/ab2945f8-ea81-4d5f-a060-80b74aa13816.html"  target="element">
+						<area shape="rect" coords="1126,139,1246,194" href="../elements/c907e5fc-c783-4ef0-9420-3c0def18f83c.html"  target="element">
+						<area shape="rect" coords="646,694,766,767" href="../elements/8dcf8816-7692-4424-9fbf-c78d49bbdc44.html"  target="element">
+						<area shape="rect" coords="646,610,766,665" href="../elements/0c68333c-c5e6-4978-9c18-8012ad618814.html"  target="element">
+						<area shape="rect" coords="322,10,442,65" href="../elements/69de5b79-956f-447f-be2e-a6099c937f10.html"  target="element">
+						<area shape="rect" coords="10,130,130,203" href="../elements/47564ca8-7e97-4602-8b48-d3688bf91168.html"  target="element">
+						<area shape="rect" coords="10,238,130,293" href="../elements/909000ba-1f1e-4597-adba-14341b3608c2.html"  target="element">
+						<area shape="rect" coords="490,532,610,587" href="../elements/5b497993-4da7-4ec1-b295-159c6f98c443.html"  target="element">
+
+			</map>
 			<div role="tabpanel">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
 					<li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
 					<li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
 				</ul>
 
 				<!-- Tab panes -->
@@ -50,6 +67,149 @@
 							</tbody>
 						</table>
 					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr><td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td><td class="i18n-elementtype-ApplicationService"></td></tr>
+											<tr><td> <a href="../elements/50e776ff-a8e9-4181-b568-cb859b25dd0d.html" target="element"> Ares Game Dedicated Server </a> </td><td class="i18n-elementtype-ApplicationService"></td></tr>
+											<tr><td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td><td class="i18n-elementtype-ApplicationService"></td></tr>
+											<tr><td> <a href="../elements/ab2945f8-ea81-4d5f-a060-80b74aa13816.html" target="element"> Ares REST API </a> </td><td class="i18n-elementtype-ApplicationInterface"></td></tr>
+											<tr><td> <a href="../elements/c907e5fc-c783-4ef0-9420-3c0def18f83c.html" target="element"> UDP RPC Service </a> </td><td class="i18n-elementtype-ApplicationInterface"></td></tr>
+											<tr><td> <a href="../elements/8dcf8816-7692-4424-9fbf-c78d49bbdc44.html" target="element"> Ares DS </a> </td><td class="i18n-elementtype-ApplicationService"></td></tr>
+											<tr><td> <a href="../elements/0c68333c-c5e6-4978-9c18-8012ad618814.html" target="element"> TCP Data Stream </a> </td><td class="i18n-elementtype-ApplicationInterface"></td></tr>
+											<tr><td> <a href="../elements/69de5b79-956f-447f-be2e-a6099c937f10.html" target="element"> Gamer </a> </td><td class="i18n-elementtype-BusinessActor"></td></tr>
+											<tr><td> <a href="../elements/47564ca8-7e97-4602-8b48-d3688bf91168.html" target="element"> Ares CMS </a> </td><td class="i18n-elementtype-ApplicationService"></td></tr>
+											<tr><td> <a href="../elements/909000ba-1f1e-4597-adba-14341b3608c2.html" target="element"> HTTP static content </a> </td><td class="i18n-elementtype-ApplicationInterface"></td></tr>
+											<tr><td> <a href="../elements/5b497993-4da7-4ec1-b295-159c6f98c443.html" target="element"> Ares Websocket Interface </a> </td><td class="i18n-elementtype-ApplicationInterface"></td></tr>
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/fb7ca715-4f24-4f59-bbb4-416d9aa37ccf.html" target="element"> server commands and data </a> </td>
+																		<td> <a href="../elements/fb7ca715-4f24-4f59-bbb4-416d9aa37ccf.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/50e776ff-a8e9-4181-b568-cb859b25dd0d.html" target="element"> Ares Game Dedicated Server </a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/c322cd24-9e1d-43dd-b220-f9a45a2853d7.html" target="element"> player data </a> </td>
+																		<td> <a href="../elements/c322cd24-9e1d-43dd-b220-f9a45a2853d7.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/50e776ff-a8e9-4181-b568-cb859b25dd0d.html" target="element"> Ares Game Dedicated Server </a> </td>
+																		<td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/b61df937-1bbf-440c-add9-164dffaa03c2.html" target="element"> game events </a> </td>
+																		<td> <a href="../elements/b61df937-1bbf-440c-add9-164dffaa03c2.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																		<td> <a href="../elements/50e776ff-a8e9-4181-b568-cb859b25dd0d.html" target="element"> Ares Game Dedicated Server </a> </td>
+																		<td> <a href="../elements/8dcf8816-7692-4424-9fbf-c78d49bbdc44.html" target="element"> Ares DS </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/c39b0661-bd58-4f92-a501-2697e7a2c066.html" target="element"> client commands </a> </td>
+																		<td> <a href="../elements/c39b0661-bd58-4f92-a501-2697e7a2c066.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																		<td> <a href="../elements/50e776ff-a8e9-4181-b568-cb859b25dd0d.html" target="element"> Ares Game Dedicated Server </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/cb96bc07-1fd2-48ea-8f40-b5c2ff85f4b8.html" target="element"> registration </a> </td>
+																		<td> <a href="../elements/cb96bc07-1fd2-48ea-8f40-b5c2ff85f4b8.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																		<td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/cf270c15-f230-44ff-a89d-2f4d97f81cfa.html" target="element"> player data </a> </td>
+																		<td> <a href="../elements/cf270c15-f230-44ff-a89d-2f4d97f81cfa.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																		<td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/c94f46e2-914d-4c68-b321-2890e62b15ac.html" target="element"> store operations </a> </td>
+																		<td> <a href="../elements/c94f46e2-914d-4c68-b321-2890e62b15ac.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																		<td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/39652071-bbea-412b-9fbc-f25b941afe73.html" target="element"> game events </a> </td>
+																		<td> <a href="../elements/39652071-bbea-412b-9fbc-f25b941afe73.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																		<td> <a href="../elements/8dcf8816-7692-4424-9fbf-c78d49bbdc44.html" target="element"> Ares DS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a5f3faae-9828-4bad-9996-1f3490999740.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a5f3faae-9828-4bad-9996-1f3490999740.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																		<td> <a href="../elements/69de5b79-956f-447f-be2e-a6099c937f10.html" target="element"> Gamer </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/d1690548-473c-44fe-831f-bfb3d7c0465d.html" target="element"> news feed </a> </td>
+																		<td> <a href="../elements/d1690548-473c-44fe-831f-bfb3d7c0465d.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/8d4cebdc-d76b-4441-8426-8248212285ff.html" target="element"> Ares Game Client </a> </td>
+																		<td> <a href="../elements/47564ca8-7e97-4602-8b48-d3688bf91168.html" target="element"> Ares CMS </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/8126c374-dde5-437f-a0fa-9c008d9bcf4e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/8126c374-dde5-437f-a0fa-9c008d9bcf4e.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/ab2945f8-ea81-4d5f-a060-80b74aa13816.html" target="element"> Ares REST API </a> </td>
+																		<td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/dd749ab1-61af-4217-a98f-5808ed23e589.html" target="element">  </a> </td>
+																		<td> <a href="../elements/dd749ab1-61af-4217-a98f-5808ed23e589.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/c907e5fc-c783-4ef0-9420-3c0def18f83c.html" target="element"> UDP RPC Service </a> </td>
+																		<td> <a href="../elements/50e776ff-a8e9-4181-b568-cb859b25dd0d.html" target="element"> Ares Game Dedicated Server </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/d0021574-dac8-45af-80f1-203da5d19697.html" target="element"> live event stream </a> </td>
+																		<td> <a href="../elements/d0021574-dac8-45af-80f1-203da5d19697.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																		<td> <a href="../elements/8dcf8816-7692-4424-9fbf-c78d49bbdc44.html" target="element"> Ares DS </a> </td>
+																		<td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/36b96998-aeb7-4d15-8fa3-731ea7d0c1c2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/36b96998-aeb7-4d15-8fa3-731ea7d0c1c2.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/0c68333c-c5e6-4978-9c18-8012ad618814.html" target="element"> TCP Data Stream </a> </td>
+																		<td> <a href="../elements/8dcf8816-7692-4424-9fbf-c78d49bbdc44.html" target="element"> Ares DS </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/7cb22e06-f31d-432c-80ae-6d15e2e9613c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/7cb22e06-f31d-432c-80ae-6d15e2e9613c.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/909000ba-1f1e-4597-adba-14341b3608c2.html" target="element"> HTTP static content </a> </td>
+																		<td> <a href="../elements/47564ca8-7e97-4602-8b48-d3688bf91168.html" target="element"> Ares CMS </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/2b44e6d6-f5a1-4aaa-82ab-87906d339edf.html" target="element">  </a> </td>
+																		<td> <a href="../elements/2b44e6d6-f5a1-4aaa-82ab-87906d339edf.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/5b497993-4da7-4ec1-b295-159c6f98c443.html" target="element"> Ares Websocket Interface </a> </td>
+																		<td> <a href="../elements/a696015e-e6f2-4a3d-855f-7c093ca192ba.html" target="element"> AresWS </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
 			  </div>
 			</div>
 		</div>

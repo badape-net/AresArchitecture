@@ -80,7 +80,40 @@
 						  	var dataProperties = [ ];
 						 	var dataRelations = [ ];
 
-										dataElements.push({id:"2081a7c8-3219-4701-8fd8-0f843323fa8d", type:"ArchimateDiagramModel", name:decodeURL("Ares+Architecture"), description:decodeURL("")});
+										dataElements.push({id:"69de5b79-956f-447f-be2e-a6099c937f10", type:"BusinessActor", name:decodeURL("Gamer"), description:decodeURL("")});
+
+
+										dataElements.push({id:"a696015e-e6f2-4a3d-855f-7c093ca192ba", type:"ApplicationService", name:decodeURL("AresWS"), description:decodeURL("")});
+										dataElements.push({id:"50e776ff-a8e9-4181-b568-cb859b25dd0d", type:"ApplicationService", name:decodeURL("Ares+Game+Dedicated+Server"), description:decodeURL("")});
+										dataElements.push({id:"8d4cebdc-d76b-4441-8426-8248212285ff", type:"ApplicationService", name:decodeURL("Ares+Game+Client"), description:decodeURL("")});
+										dataElements.push({id:"ab2945f8-ea81-4d5f-a060-80b74aa13816", type:"ApplicationInterface", name:decodeURL("Ares+REST+API"), description:decodeURL("")});
+										dataElements.push({id:"c907e5fc-c783-4ef0-9420-3c0def18f83c", type:"ApplicationInterface", name:decodeURL("UDP+RPC+Service"), description:decodeURL("")});
+										dataElements.push({id:"8dcf8816-7692-4424-9fbf-c78d49bbdc44", type:"ApplicationService", name:decodeURL("Ares+DS"), description:decodeURL("")});
+										dataElements.push({id:"0c68333c-c5e6-4978-9c18-8012ad618814", type:"ApplicationInterface", name:decodeURL("TCP+Data+Stream"), description:decodeURL("")});
+										dataElements.push({id:"47564ca8-7e97-4602-8b48-d3688bf91168", type:"ApplicationService", name:decodeURL("Ares+CMS"), description:decodeURL("")});
+										dataElements.push({id:"909000ba-1f1e-4597-adba-14341b3608c2", type:"ApplicationInterface", name:decodeURL("HTTP+static+content"), description:decodeURL("")});
+										dataElements.push({id:"5b497993-4da7-4ec1-b295-159c6f98c443", type:"ApplicationInterface", name:decodeURL("Ares+Websocket+Interface"), description:decodeURL("")});
+
+
+										dataRelations.push({id:"dd749ab1-61af-4217-a98f-5808ed23e589", type:"AssignmentRelationship", name:decodeURL(""), description:decodeURL(""), source:"c907e5fc-c783-4ef0-9420-3c0def18f83c", target:"50e776ff-a8e9-4181-b568-cb859b25dd0d"});
+										dataRelations.push({id:"8126c374-dde5-437f-a0fa-9c008d9bcf4e", type:"AssignmentRelationship", name:decodeURL(""), description:decodeURL(""), source:"ab2945f8-ea81-4d5f-a060-80b74aa13816", target:"a696015e-e6f2-4a3d-855f-7c093ca192ba"});
+										dataRelations.push({id:"c39b0661-bd58-4f92-a501-2697e7a2c066", type:"TriggeringRelationship", name:decodeURL("client+commands"), description:decodeURL(""), source:"8d4cebdc-d76b-4441-8426-8248212285ff", target:"50e776ff-a8e9-4181-b568-cb859b25dd0d"});
+										dataRelations.push({id:"fb7ca715-4f24-4f59-bbb4-416d9aa37ccf", type:"TriggeringRelationship", name:decodeURL("server+commands+and+data"), description:decodeURL(""), source:"50e776ff-a8e9-4181-b568-cb859b25dd0d", target:"8d4cebdc-d76b-4441-8426-8248212285ff"});
+										dataRelations.push({id:"cb96bc07-1fd2-48ea-8f40-b5c2ff85f4b8", type:"TriggeringRelationship", name:decodeURL("registration"), description:decodeURL(""), source:"8d4cebdc-d76b-4441-8426-8248212285ff", target:"a696015e-e6f2-4a3d-855f-7c093ca192ba"});
+										dataRelations.push({id:"cf270c15-f230-44ff-a89d-2f4d97f81cfa", type:"TriggeringRelationship", name:decodeURL("player+data"), description:decodeURL(""), source:"8d4cebdc-d76b-4441-8426-8248212285ff", target:"a696015e-e6f2-4a3d-855f-7c093ca192ba"});
+										dataRelations.push({id:"c94f46e2-914d-4c68-b321-2890e62b15ac", type:"TriggeringRelationship", name:decodeURL("store+operations"), description:decodeURL(""), source:"8d4cebdc-d76b-4441-8426-8248212285ff", target:"a696015e-e6f2-4a3d-855f-7c093ca192ba"});
+										dataRelations.push({id:"39652071-bbea-412b-9fbc-f25b941afe73", type:"FlowRelationship", name:decodeURL("game+events"), description:decodeURL(""), source:"8d4cebdc-d76b-4441-8426-8248212285ff", target:"8dcf8816-7692-4424-9fbf-c78d49bbdc44"});
+										dataRelations.push({id:"36b96998-aeb7-4d15-8fa3-731ea7d0c1c2", type:"AssignmentRelationship", name:decodeURL(""), description:decodeURL(""), source:"0c68333c-c5e6-4978-9c18-8012ad618814", target:"8dcf8816-7692-4424-9fbf-c78d49bbdc44"});
+										dataRelations.push({id:"c322cd24-9e1d-43dd-b220-f9a45a2853d7", type:"TriggeringRelationship", name:decodeURL("player+data"), description:decodeURL(""), source:"50e776ff-a8e9-4181-b568-cb859b25dd0d", target:"a696015e-e6f2-4a3d-855f-7c093ca192ba"});
+										dataRelations.push({id:"b61df937-1bbf-440c-add9-164dffaa03c2", type:"FlowRelationship", name:decodeURL("game+events"), description:decodeURL(""), source:"50e776ff-a8e9-4181-b568-cb859b25dd0d", target:"8dcf8816-7692-4424-9fbf-c78d49bbdc44"});
+										dataRelations.push({id:"a5f3faae-9828-4bad-9996-1f3490999740", type:"ServingRelationship", name:decodeURL(""), description:decodeURL(""), source:"8d4cebdc-d76b-4441-8426-8248212285ff", target:"69de5b79-956f-447f-be2e-a6099c937f10"});
+										dataRelations.push({id:"7cb22e06-f31d-432c-80ae-6d15e2e9613c", type:"AssignmentRelationship", name:decodeURL(""), description:decodeURL(""), source:"909000ba-1f1e-4597-adba-14341b3608c2", target:"47564ca8-7e97-4602-8b48-d3688bf91168"});
+										dataRelations.push({id:"d1690548-473c-44fe-831f-bfb3d7c0465d", type:"TriggeringRelationship", name:decodeURL("news+feed"), description:decodeURL(""), source:"8d4cebdc-d76b-4441-8426-8248212285ff", target:"47564ca8-7e97-4602-8b48-d3688bf91168"});
+										dataRelations.push({id:"2b44e6d6-f5a1-4aaa-82ab-87906d339edf", type:"AssignmentRelationship", name:decodeURL(""), description:decodeURL(""), source:"5b497993-4da7-4ec1-b295-159c6f98c443", target:"a696015e-e6f2-4a3d-855f-7c093ca192ba"});
+										dataRelations.push({id:"d0021574-dac8-45af-80f1-203da5d19697", type:"FlowRelationship", name:decodeURL("live+event+stream"), description:decodeURL(""), source:"8dcf8816-7692-4424-9fbf-c78d49bbdc44", target:"a696015e-e6f2-4a3d-855f-7c093ca192ba"});
+
+
+										dataElements.push({id:"2081a7c8-3219-4701-8fd8-0f843323fa8d", type:"ArchimateDiagramModel", name:decodeURL("Ares+Application+Architecture"), description:decodeURL("")});
 
 
 
